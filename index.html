@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organiza tus Gastos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h2>ORGANIZA TUS GASTOS</h2>
+    </header>
+
+    <form id="formularioGastos">
+
+        <section id="ingresos">
+            <h2>INGRESOS</h2>
+
+            
+            <label for="nomina1">NÓMINA 1</label>
+            <input type="number" id="nomina1" name="nomina1" min="0" placeholder="$0.00">
+
+            <label for="nomina2">NÓMINA 2</label>
+            <input type="number" id="nomina2" name="nomina2" min="0" placeholder="$0.00">
+
+        </section>
+
+        <section id="desembolso"> 
+            <h2>GASTOS</h2>
+
+            <label for="comida">COMIDA</label>
+            <input type="number" id="comida" name="comida" min="0" placeholder="$0.00">
+
+            <label for="transporte">TRANSPORTE</label>
+            <input type="number" id="transporte" name="transporte" min="0" placeholder="$0.00">
+
+            <label for="gas">GAS</label>
+            <input type="number" id="gas" name="gas" min="0" placeholder="$0.00">
+
+            <label for="luz">LUZ</label>
+            <input type="number" id="luz" name="luz" min="0" placeholder="$0.00">
+
+            <label for="internet">INTERNET</label>
+            <input type="number" id="internet" name="internet" min="0" placeholder="$0.00">
+
+            <label for="renta">RENTA</label>
+            <input type="number" id="renta" name="renta" min="0" placeholder="$0.00">
+
+            <label for="gastos">OTROS GASTOS</label>
+            <input type="number" id="gastos" name="gastos" min="0" placeholder="$0.00">
+
+        </section>
+   
+
+        <section id="calculo">
+            <input type="submit" value="Calcular">
+   
+            <div id="totalNom">
+                <h2>Total Nóminas: $<span id="totalNominas">0.00</span></h2>
+            </div>
+            <div id="dineroGast">
+                <h2>Dinero Gastado: $<span id="dineroGastado">0.00</span></h2>
+            </div>
+            <div id="dineroRes">
+                <h2>Dinero Restante: $<span id="dineroRestante">0.00</span></h2>
+            </div>
+            <div id="alert">
+                <h2><span id="alerta"></span></h2>
+            </div>
+    
+            <button type="button" id="limpiarCampos">Limpiar Campos</button> 
+        </section>
+
+    </form>
+
+        <footer>
+            <hr>
+            <p>Todos los derechos reservados &copy; Marvyn Paredes</p>
+        </footer>
+
+        <script src="script.js"></script>
+</body>
+</html>
